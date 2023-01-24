@@ -1,0 +1,108 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    justify-content: space-between;
+}
+
+.i-left {
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.i-name>:nth-child(1) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.i-name>:nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--orange);
+    margin-top: 10px;
+}
+
+.i-name>:nth-child(3) {
+    font-size: 0.6rem;
+    margin-top: 10px;
+    justify-content: start;
+    color: var(--gray);
+}
+
+.i-button {
+    width: fit-content;
+}
+
+.i-button:hover {
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    background: white;
+    cursor: pointer;
+}
+
+.i-l-img {
+    margin: 0;
+}
+
+.i-l-img>* {
+    transform: scale(0.5);
+}
+
+.i-l-img>*:hover {
+    cursor: pointer;
+}
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-right>* {
+    position: absolute;
+    z-index: 1;
+}
+
+#i-avatar-id {
+    width: 20rem;
+    top: 10%;
+    left: 20%;
+}
+
+.i-blur {
+    position: absolute;
+    width: 20rem;
+    height: 14rem;
+    border-radius: 50%;
+    z-index: -9;
+    filter: blur(72px);
+}
+
+#i-humble-id{
+    position: absolute;
+    transform: scale(0.9);
+    top: 70%;
+    right: 5%;
+}
+
+#i-glassemoji-id{
+    position: absolute;
+    transform: scale(0.5);
+    top: 9%;
+    left: -9%;
+
+}
+
+/* .i-right>:nth-child(1) {
+    transform: scale(0.2);
+    left: -110%;
+    top: -180%;
+    z-index: 3;
+} */
